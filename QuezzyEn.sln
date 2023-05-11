@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuezzyEn", "QuezzyEn\QuezzyEn.csproj", "{FAB0EB4F-F42C-4CA4-951B-8D94A863C65E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FAB0EB4F-F42C-4CA4-951B-8D94A863C65E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAB0EB4F-F42C-4CA4-951B-8D94A863C65E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAB0EB4F-F42C-4CA4-951B-8D94A863C65E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAB0EB4F-F42C-4CA4-951B-8D94A863C65E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3E0A21C8-CB2D-46DC-8F47-18FCE39E282B}
+	EndGlobalSection
+EndGlobal
