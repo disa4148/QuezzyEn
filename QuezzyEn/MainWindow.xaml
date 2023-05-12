@@ -73,14 +73,40 @@
                     <Label Content="Авторизируйтесь" FontSize="30" HorizontalAlignment="Center"/>
                     <TextBox Name="UsernameTextBox" Height="41" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Text="Логин" Margin="0, 20, 0, 20"/>
 
-                    <PasswordBox  Name="PasswordBox" Height="41" Margin="0, 0, 0, 20" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
-                    <Button Name="LoginButton" Content="Login" Margin="5" Click="LoginButton_Click"/>
+                    <PasswordBox  Password="12345"  Name="PasswordBox" Height="41" Margin="0, 0, 0, 20" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+                   
+                    <Button Content="Войти"
+                        Name="LoginButton"
+                        Click="LoginButton_Click"
+                        Background="#6A5AE0"
+                        Foreground="White"
+                        BorderThickness="0"
+                        
+                        Width="335"
+                        Height="41"
+                        FontSize="16"
+                        FontWeight="Bold">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="25"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+
+                    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10">
+                        <Label FontWeight="Bold" Foreground="#858494" Content="Нажимая на кнопку вы соглашаетесь с политикой" />
+                        <Label FontWeight="Bold" Foreground="#858494" Content="конфиндециальности" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                    
                     <TextBlock Name="ErrorMessageTextBlock" Foreground="Red" Margin="5"/>
                 </StackPanel>
             </StackPanel>
 
             <StackPanel Background="#DBD7FE" Width="250" Height="510" Margin="35, 0, 0,0">
                 <Image Source="Resources/James/James1.png" Width="192" Height="281" HorizontalAlignment="Center" Margin="0, 50, 0, 0"/>
+                <Label Content="Ещё нет аккаунта?" HorizontalAlignment="Center" Foreground="#6A5AE0" FontSize="16"/>
+                <Button Content="Регистрация" HorizontalAlignment="Center" FontWeight="Bold" Background="#DBD7FE" BorderBrush="#DBD7FE" Foreground="#6A5AE0" FontSize="16"/>
+
             </StackPanel>
         </StackPanel>
     </StackPanel>
