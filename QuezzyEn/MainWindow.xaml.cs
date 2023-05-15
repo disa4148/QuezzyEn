@@ -18,23 +18,25 @@ namespace QuezzyEn
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Page
+    public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
+            MainFrame.Content = new SignInPage();
+
         }
 
         private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService navigationService = NavigationService.GetNavigationService(this);
-            navigationService.Navigate(new Uri("MainPage.xaml", UriKind.Relative));
+            //NavigationService navigationService = NavigationService.GetNavigationService(this);
+            //navigationService.Navigate(new Uri("MainPage.xaml", UriKind.Relative));
         }
 
         private void RedirectToRegButton_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService navigationService = NavigationService.GetNavigationService(this);
-            navigationService.Navigate(new Uri("RegPage.xaml", UriKind.Relative));
+            //NavigationService navigationService = NavigationService.GetNavigationService(this);
+            //navigationService.Navigate(new Uri("RegPage.xaml", UriKind.Relative));
         }
     }
 }

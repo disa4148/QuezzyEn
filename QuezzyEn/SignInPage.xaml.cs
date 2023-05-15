@@ -16,23 +16,24 @@ using System.Windows.Shapes;
 namespace QuezzyEn
 {
     /// <summary>
-    /// Логика взаимодействия для RegPage.xaml
+    /// Логика взаимодействия для SignInPage.xaml
     /// </summary>
-    public partial class RegPage : Page
+    public partial class SignInPage : Page
     {
-        public RegPage()
+        public SignInPage()
         {
             InitializeComponent();
         }
 
-        private void RegButton_Click(object sender, RoutedEventArgs e)
+        private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
+            NavigationService.Navigate(new MainPage());
 
         }
 
-        private void RedirectToLoginBtn_Click(object sender, RoutedEventArgs e)
+        private void RedirectToRegButton_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new SignInPage());
+            NavigationService.Navigate(new RegPage());
 
         }
     }
