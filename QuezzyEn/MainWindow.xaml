@@ -7,7 +7,7 @@
         mc:Ignorable="d"
        
         Title="QuezzyEn"  Background="#E8E7FF"
-      
+        ResizeMode="NoResize"
         Width="900"
         Height="500">
 

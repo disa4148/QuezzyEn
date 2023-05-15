@@ -128,5 +128,15 @@
     <Resource Include="Resources\UI\homeIcon.png" />
     <Resource Include="Resources\UI\profileIcon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\UI\book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\UI\Btns\BookBtn.png" />
+    <Resource Include="Resources\UI\Btns\ChestBtn.png" />
+    <Resource Include="Resources\UI\Btns\DumbbellBtn.png" />
+    <Resource Include="Resources\UI\Btns\StarBtn.png" />
+    <Resource Include="Resources\UI\Btns\TrophyBtn.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

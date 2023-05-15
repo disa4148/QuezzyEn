@@ -12,8 +12,7 @@
       Background="#E8E7FF"
       WindowWidth="900"
       WindowHeight="500"
-      Title="Главная страница"
-     >
+      Title="Главная страница">
 
 
     <Page.Resources>
@@ -72,20 +71,109 @@
                         <Image  Source="Resources/UI/homeIcon.png" Width="26" Height="24" Margin="0, 2, 100,0"/>
                         <TextBlock Text="Профиль" VerticalAlignment="Center" Margin="20,0,0,0" HorizontalAlignment="Center"/>
                     </Grid>
-                    
+
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="10"/>
                         </Style>
                     </Button.Resources>
                 </Button>
-
-                
             </StackPanel>
         </StackPanel>
 
-        <StackPanel>
-            
-        </StackPanel>
+        <ScrollViewer>
+            <StackPanel Width="705" Height="1940">
+            <StackPanel HorizontalAlignment="Center" Margin="10">
+                <Label Content="Добро пожаловать в тренажер" FontWeight="Bold" FontSize="26"/>
+                <Label Content="английского языка" FontWeight="Bold" FontSize="26" Margin="70, -14,0,0"/>
+                <Label Content="Улучшите свои знания английского языка в" FontSize="13" FontWeight="Bold" Foreground="#858494" HorizontalAlignment="Center" Margin="0, 0,10, 0"/>
+                <Label Content="удобной для вас форме" HorizontalAlignment="Center" FontSize="13" FontWeight="Bold" Foreground="#858494" Margin="0, -12,10, 0" />
+            </StackPanel>
+
+            <Border Background="#DBD7FE" Width="435" Height="92" CornerRadius="15" Margin="10">
+                <StackPanel>
+                    <Label Content="Раздел 1" FontSize="18" FontWeight="Bold"  Margin="20, 8, 0, 0"/>
+                    <StackPanel Orientation="Horizontal" >
+                        <StackPanel Orientation="Vertical" Margin="20, 0, 0, 0">
+                            <Label Content="Узнайте основные фразы," FontSize="14" FontWeight="Bold" Foreground="#858494" Margin="0, -10,0,0"/>
+                            <Label Content="расскажите откуда вы" FontSize="14" FontWeight="Bold" Foreground="#858494" Margin="0, -10, 0,0"/>
+                        </StackPanel>
+
+                        <Button 
+                        Margin="37, -30, 0, 0"
+                        Padding="0, 0, 0,5"
+                        
+                        Background="#41378B"
+                        Foreground="White"
+                        BorderThickness="0"
+                        
+                        Width="165"
+                        Height="32"
+                            
+                        FontSize="16"
+                        FontWeight="Bold">
+
+                            <Grid>
+                                <Image Source="Resources/UI/book.png" Width="26" Height="24" Margin="0, 5, 100,0"/>
+                                <TextBlock Text="Справочник" VerticalAlignment="Center" Margin="40,0,0,0" HorizontalAlignment="Center" />
+                            </Grid>
+
+                            <Button.Resources>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="CornerRadius" Value="10"/>
+                                </Style>
+                            </Button.Resources>
+                        </Button>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+
+            <StackPanel>
+                <Image Source="Resources/UI/Btns/StarBtn.png" Width="56" Height="60" Margin="17"/>
+                <Image Source="Resources/UI/Btns/BookBtn.png" Width="56" Height="60" Margin="0, 0, 115,0"/>
+                <Image Source="Resources/UI/Btns/ChestBtn.png" Width="56" Height="60"  Margin="0, 10, 250,0"/>
+                <Image Source="Resources/UI/Btns/DumbbellBtn.png" Width="56" Height="60" Margin="0, 10, 115,0"/>
+                <Image Source="Resources/UI/Btns/TrophyBtn.png" Width="56" Height="60" Margin="0, 10, 0,0"/>
+            </StackPanel>
+
+                <Border Background="#DBD7FE" Width="435" Height="92" CornerRadius="15" Margin="25">
+                    <StackPanel>
+                        <Label Content="Раздел 2" FontSize="18" FontWeight="Bold"  Margin="20, 8, 0, 0"/>
+                        <StackPanel Orientation="Horizontal" >
+                            <StackPanel Orientation="Vertical" Margin="20, 0, 0, 0">
+                                <Label Content="Представьтесь, расскажите" FontSize="14" FontWeight="Bold" Foreground="#858494" Margin="0, -10,0,0"/>
+                                <Label Content="о себе другому человеку" FontSize="14" FontWeight="Bold" Foreground="#858494" Margin="0, -10, 0,0"/>
+                            </StackPanel>
+
+                            <Button 
+                        Margin="37, -30, 0, 0"
+                        Padding="0, 0, 0,5"
+                        
+                        Background="#41378B"
+                        Foreground="White"
+                        BorderThickness="0"
+                        
+                        Width="165"
+                        Height="32"
+                            
+                        FontSize="16"
+                        FontWeight="Bold">
+
+                                <Grid>
+                                    <Image Source="Resources/UI/book.png" Width="26" Height="24" Margin="0, 5, 100,0"/>
+                                    <TextBlock Text="Справочник" VerticalAlignment="Center" Margin="40,0,0,0" HorizontalAlignment="Center" />
+                                </Grid>
+
+                                <Button.Resources>
+                                    <Style TargetType="{x:Type Border}">
+                                        <Setter Property="CornerRadius" Value="10"/>
+                                    </Style>
+                                </Button.Resources>
+                            </Button>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </ScrollViewer>
     </StackPanel>
 </Page>
