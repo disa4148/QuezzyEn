@@ -27,7 +27,8 @@ namespace QuezzyEn
 
         private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
-      
+            NavigationService navigationService = NavigationService.GetNavigationService(this);
+            navigationService.Navigate(new Uri("MainPage.xaml", UriKind.Relative));
         }
 
         private void RedirectToRegButton_Click(object sender, RoutedEventArgs e)

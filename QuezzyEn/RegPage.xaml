@@ -6,7 +6,10 @@
       xmlns:local="clr-namespace:QuezzyEn"
       mc:Ignorable="d" 
       
-      Title="RegPage"  Height="500" Width="900" Background="#E8E7FF"
+      Title="RegPage"  
+      Height="500" 
+      Width="900" 
+      Background="#E8E7FF"
       WindowWidth="900"
       WindowHeight="500">
 

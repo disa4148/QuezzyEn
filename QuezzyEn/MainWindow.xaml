@@ -11,6 +11,9 @@
         WindowWidth="900"
         WindowHeight="500">
     
+
+
+
     <Page.Resources>
         <Style TargetType="{x:Type TextBox}">
             <Setter Property="Foreground" Value="#858494"/>
@@ -65,8 +68,9 @@
         </Style>
     </Page.Resources>
 
+    
     <StackPanel Height="500" Width="900">
-        
+        <!--<Frame NavigationUIVisibility="Hidden"/>-->
           
         <StackPanel  Orientation="Horizontal">
             <StackPanel Width="615">
@@ -77,7 +81,7 @@
                     <Label Content="Авторизируйтесь" FontSize="30" HorizontalAlignment="Center"/>
                     <TextBox Name="UsernameTextBox" Height="41" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Text="Логин" Margin="0, 20, 0, 20"/>
 
-                    <PasswordBox  Password="12345"  Name="PasswordBox" Height="41" Margin="0, 0, 0, 20" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+                    <PasswordBox Password="12345"  Name="PasswordBox" Height="41" Margin="0, 0, 0, 20" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
                    
                     <Button Content="Войти"
                         Name="LoginButton"
