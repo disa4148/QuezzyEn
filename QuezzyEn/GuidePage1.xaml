@@ -32,9 +32,9 @@
         <StackPanel Margin="15">
                 <Label Content="Ключевые фразы" FontSize="22" FontWeight="Bold" Foreground="#6A5AE0"/>
 
-                    <Label Content="Hello - Здравствуйте" FontSize="22"  FontWeight="DemiBold" Foreground="#858494" />
-                    <Label Content="Yes, please - Да, пожалуйста" FontSize="22"  FontWeight="DemiBold" Foreground="#858494" Margin="0, -12, 0, 0"/>
-                    <Label Content="No, thank you - Нет, спасибо." FontSize="22"  FontWeight="DemiBold" Foreground="#858494" Margin="0, -12, 0, 0"/>
+                <Label Content="Hello - Здравствуйте" FontSize="22"  FontWeight="DemiBold" Foreground="#858494" />
+                <Label Content="Yes, please - Да, пожалуйста" FontSize="22"  FontWeight="DemiBold" Foreground="#858494" Margin="0, -12, 0, 0"/>
+                <Label Content="No, thank you - Нет, спасибо." FontSize="22"  FontWeight="DemiBold" Foreground="#858494" Margin="0, -12, 0, 0"/>
                 <Label Content="Goodbye - До свидания!" FontSize="22" FontWeight="DemiBold" Foreground="#858494" Margin="0, -12, 0, 0"/>
             
                 <Label Content="Теория" FontSize="22" FontWeight="Bold" Foreground="#6A5AE0" />
@@ -48,13 +48,13 @@
 
                 <Image Source="Resources/UI/GuideImg1.png" Width="481" Height="293" HorizontalAlignment="Center"/>
 
-                    <Label Content="Speak English, please"  FontWeight="DemiBold" HorizontalAlignment="Center" FontSize="20"/>
-                    <Label Content="Говорите по английски, пожалуйста!"  FontWeight="DemiBold" FontSize="18" Foreground="#858494" HorizontalAlignment="Center"/>
+                <Label Content="Speak English, please"  FontWeight="DemiBold" HorizontalAlignment="Center" FontSize="20"/>
+                <Label Content="Говорите по английски, пожалуйста!"  FontWeight="DemiBold" FontSize="18" Foreground="#858494" HorizontalAlignment="Center"/>
 
-                    <Label Content="Но в ответ на слова благодарности обычно говорят:"  FontWeight="DemiBold" FontSize="16" Foreground="#6A5AE0"/>
-                    <Label Content="You are welcome!"  FontWeight="DemiBold" FontSize="16"/>
+                <Label Content="Но в ответ на слова благодарности обычно говорят:"  FontWeight="DemiBold" FontSize="16" Foreground="#6A5AE0"/>
+                <Label Content="You are welcome!"  FontWeight="DemiBold" FontSize="16"/>
 
-                    <Label Content="Welcome - также может означать Добро пожаловать" FontSize="16"  FontWeight="DemiBold" Foreground="#858494"/>
+                <Label Content="Welcome - также может означать Добро пожаловать" FontSize="16"  FontWeight="DemiBold" Foreground="#858494"/>
 
                 </StackPanel>
         </Border>

@@ -20,6 +20,9 @@ namespace QuezzyEn
     /// </summary>
     public partial class SignInPage : Page
     {
+
+        quezzyEnEntities db = new quezzyEnEntities();
+
         public SignInPage()
         {
             InitializeComponent();
@@ -27,7 +30,34 @@ namespace QuezzyEn
 
         private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new MainPage());
+            var users = db.users;
+            bool userValid = false;
+
+            foreach (users u in users)
+            {
+                if (Login.Text == "" || Password.Password == "")
+                {
+                    MessageBox.Show("Заполните все поля");
+                }
+
+                if (Login.Text == u.login && Password.Password == u.password)
+                {
+                    userValid = true;
+                }
+              
+            }
+
+            if (userValid)
+            {
+                MessageBox.Show("Вы успешно авторизовались!");
+                NavigationService.Navigate(new MainPage());
+            }
+            else
+            {
+                MessageBox.Show("Некорректные данные");
+            }
+
+            
 
         }
 

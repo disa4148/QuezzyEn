@@ -77,9 +77,9 @@
 
                 <StackPanel Width="335" HorizontalAlignment="Center" VerticalAlignment="Center">
                     <Label Content="Авторизируйтесь" FontSize="30" HorizontalAlignment="Center"/>
-                    <TextBox Name="UsernameTextBox" Height="41" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Text="Логин" Margin="0, 20, 0, 20"/>
+                    <TextBox Name="Login" Height="41" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Text="Логин" Margin="0, 20, 0, 20"/>
 
-                    <PasswordBox Password="12345"  Name="PasswordBox" Height="41" Margin="0, 0, 0, 20" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+                    <PasswordBox Password="12345"  Name="Password" Height="41" Margin="0, 0, 0, 20" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
 
                     <Button Content="Войти"
                         Name="LoginButton"
