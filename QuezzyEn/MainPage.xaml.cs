@@ -36,5 +36,13 @@ namespace QuezzyEn
             NavigationService.Navigate(new GuidePage2());
 
         }
+
+       
+      
+
+        private void QuizPage1_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new QuizPage1());
+        }
     }
 }

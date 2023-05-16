@@ -132,7 +132,9 @@
             </Border>
 
             <StackPanel>
-                <Image Source="Resources/UI/Btns/StarBtn.png" Width="56" Height="60" Margin="17"/>
+                    <Button Click="QuizPage1_Click" BorderThickness="0" Background="Transparent" Width="95">
+                        <Image Source="Resources/UI/Btns/StarBtn.png" Width="56" Height="60" Margin="17"/>
+                    </Button>
                 <Image Source="Resources/UI/Btns/BookBtn.png" Width="56" Height="60" Margin="0, 0, 115,0"/>
                 <Image Source="Resources/UI/Btns/ChestBtn.png" Width="56" Height="60"  Margin="0, 10, 250,0"/>
                 <Image Source="Resources/UI/Btns/DumbbellBtn.png" Width="56" Height="60" Margin="0, 10, 115,0"/>
@@ -181,7 +183,9 @@
                 </Border>
 
                 <StackPanel>
-                    <Image Source="Resources/UI/Btns/StarBtn.png" Width="56" Height="60" Margin="17"/>
+                    <Button Click="QuizPage1_Click" BorderThickness="0" Background="Transparent">
+                        <Image Source="Resources/UI/Btns/StarBtn.png" Width="56" Height="60" Margin="17"/>
+                    </Button>
                     <Image Source="Resources/UI/Btns/BookBtn.png" Width="56" Height="60" Margin="115, 0, 0 ,0"/>
                     <Image Source="Resources/UI/Btns/ChestBtn.png" Width="56" Height="60"  Margin="250, 10, 0,0"/>
                     <Image Source="Resources/UI/Btns/DumbbellBtn.png" Width="56" Height="60" Margin="115, 10, 0,0"/>
