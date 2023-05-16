@@ -16,25 +16,18 @@ using System.Windows.Shapes;
 namespace QuezzyEn
 {
     /// <summary>
-    /// Логика взаимодействия для MainPage.xaml
+    /// Логика взаимодействия для GuidePage2.xaml
     /// </summary>
-    public partial class MainPage : Page
+    public partial class GuidePage2 : Page
     {
-        public MainPage()
+        public GuidePage2()
         {
             InitializeComponent();
         }
 
-        private void RedirectToGuide1(object sender, RoutedEventArgs e)
+        private void RedirectToMainPage(object sender, MouseButtonEventArgs e)
         {
-            NavigationService.Navigate(new GuidePage1());
-
-        }
-
-        private void RedirectToGuide2(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new GuidePage2());
-
+            NavigationService.Navigate(new MainPage());
         }
     }
 }

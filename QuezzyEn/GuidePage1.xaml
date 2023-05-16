@@ -1,0 +1,64 @@
+﻿<Page x:Class="QuezzyEn.GuidePage1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:QuezzyEn"
+      mc:Ignorable="d" 
+      Width="900"
+      Height="500"
+      
+      Background="#E8E7FF"
+      Title="GuidePage1">
+    <ScrollViewer>
+    <StackPanel Height="1100">
+        <StackPanel Orientation="Horizontal" Margin="15" VerticalAlignment="Center">
+            <Image Source="Resources/UI/LeftArrow.png" Height="18" Width="18" HorizontalAlignment="Center" MouseLeftButtonDown="RedirectToMainPage"/>
+            <Label Content="Главная" FontSize="16" Margin="10, 0, 0, 0" HorizontalAlignment="Center" Foreground="#858494" FontWeight="Bold"  MouseLeftButtonDown="RedirectToMainPage"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Image Source="Resources/logo/LogoWhite.png" Width="55" Height="55" HorizontalAlignment="Left"/>
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Margin="30, 0,0,0">
+                <Label Content="Справочник раздела 1" Foreground="#6A5AE0" FontSize="22" FontWeight="Bold"/>
+                <Label Content="Ознакомьтесь с грамматикой и" Foreground="#858494" FontSize="19" FontWeight="Bold" Margin="0, -8, 0,0"/>
+                <Label Content="основными фразами этого раздела" Foreground="#858494" FontSize="19" FontWeight="Bold" Margin="0, -15, 0,0"/>
+            </StackPanel>
+        </StackPanel>
+        
+        <StackPanel Height="1" Background="#858494" Width="510" HorizontalAlignment="Center" Margin="10"/>
+
+            <Border  Background="#DBD7FE" Width="510" CornerRadius="15"  Margin="0, 20,0,0">
+        <StackPanel Margin="15">
+                <Label Content="Ключевые фразы" FontSize="22" FontWeight="Bold" Foreground="#6A5AE0"/>
+
+                    <Label Content="Hello - Здравствуйте" FontSize="22"  FontWeight="DemiBold" Foreground="#858494" />
+                    <Label Content="Yes, please - Да, пожалуйста" FontSize="22"  FontWeight="DemiBold" Foreground="#858494" Margin="0, -12, 0, 0"/>
+                    <Label Content="No, thank you - Нет, спасибо." FontSize="22"  FontWeight="DemiBold" Foreground="#858494" Margin="0, -12, 0, 0"/>
+                <Label Content="Goodbye - До свидания!" FontSize="22" FontWeight="DemiBold" Foreground="#858494" Margin="0, -12, 0, 0"/>
+            
+                <Label Content="Теория" FontSize="22" FontWeight="Bold" Foreground="#6A5AE0" />
+            
+                <Label Content="Общие фразы" FontSize="22" FontWeight="Bold" Foreground="Black"/>
+
+                <Label Content="По‑русски мы говорим пожалуйста когда " FontSize="22"  Foreground="#858494" />
+                <Label Content="мы кого‑то о чем‑то просим или в ответ на  " FontSize="22" Foreground="#858494" Margin="0, -12, 0, 0"/>
+                <Label Content="слова благодарности. В английском please" FontSize="22"  Foreground="#858494" Margin="0, -12, 0, 0"/>
+                <Label Content="употребляется с просьбой." FontSize="22" Foreground="#858494" Margin="0, -12, 0, 0"/>
+
+                <Image Source="Resources/UI/GuideImg1.png" Width="481" Height="293" HorizontalAlignment="Center"/>
+
+                    <Label Content="Speak English, please"  FontWeight="DemiBold" HorizontalAlignment="Center" FontSize="20"/>
+                    <Label Content="Говорите по английски, пожалуйста!"  FontWeight="DemiBold" FontSize="18" Foreground="#858494" HorizontalAlignment="Center"/>
+
+                    <Label Content="Но в ответ на слова благодарности обычно говорят:"  FontWeight="DemiBold" FontSize="16" Foreground="#6A5AE0"/>
+                    <Label Content="You are welcome!"  FontWeight="DemiBold" FontSize="16"/>
+
+                    <Label Content="Welcome - также может означать Добро пожаловать" FontSize="16"  FontWeight="DemiBold" Foreground="#858494"/>
+
+                </StackPanel>
+        </Border>
+
+    </StackPanel>
+    </ScrollViewer>
+</Page>

@@ -55,6 +55,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="GuidePage1.xaml.cs">
+      <DependentUpon>GuidePage1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GuidePage2.xaml.cs">
+      <DependentUpon>GuidePage2.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -64,6 +70,14 @@
     <Compile Include="SignInPage.xaml.cs">
       <DependentUpon>SignInPage.xaml</DependentUpon>
     </Compile>
+    <Page Include="GuidePage1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GuidePage2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -137,6 +151,15 @@
     <Resource Include="Resources\UI\Btns\DumbbellBtn.png" />
     <Resource Include="Resources\UI\Btns\StarBtn.png" />
     <Resource Include="Resources\UI\Btns\TrophyBtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\UI\LeftArrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\UI\GuideImg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\UI\GuideImg2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

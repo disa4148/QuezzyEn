@@ -103,6 +103,9 @@
                         Margin="37, -30, 0, 0"
                         Padding="0, 0, 0,5"
                         
+                        Name="RedirectToGuide1Btn"    
+                        Click="RedirectToGuide1"    
+                        
                         Background="#41378B"
                         Foreground="White"
                         BorderThickness="0"
@@ -149,6 +152,9 @@
                         Margin="37, -30, 0, 0"
                         Padding="0, 0, 0,5"
                         
+                        Name="RedirectToGuide2Btn"    
+                        Click="RedirectToGuide2"          
+                                
                         Background="#41378B"
                         Foreground="White"
                         BorderThickness="0"
@@ -173,6 +179,14 @@
                         </StackPanel>
                     </StackPanel>
                 </Border>
+
+                <StackPanel>
+                    <Image Source="Resources/UI/Btns/StarBtn.png" Width="56" Height="60" Margin="17"/>
+                    <Image Source="Resources/UI/Btns/BookBtn.png" Width="56" Height="60" Margin="115, 0, 0 ,0"/>
+                    <Image Source="Resources/UI/Btns/ChestBtn.png" Width="56" Height="60"  Margin="250, 10, 0,0"/>
+                    <Image Source="Resources/UI/Btns/DumbbellBtn.png" Width="56" Height="60" Margin="115, 10, 0,0"/>
+                    <Image Source="Resources/UI/Btns/TrophyBtn.png" Width="56" Height="60" Margin="0, 20, 0,0"/>
+                </StackPanel>
             </StackPanel>
         </ScrollViewer>
     </StackPanel>
