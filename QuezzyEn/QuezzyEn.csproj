@@ -112,6 +112,10 @@
     <Compile Include="users.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Page Include="DictionaryButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="GuidePage1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
