@@ -79,14 +79,56 @@
                 <StackPanel Height="1" Background="#ADB3BC"/>
             </StackPanel>
             
-        <StackPanel Orientation="Vertical" Margin="25, 0, 10, 10">
-                <TextBlock FontSize="18" Foreground="#858494" Margin="0, 5, 0, 5">Уникальный номер</TextBlock>
-                <TextBlock Name="tblUserId" Margin="0, 5, 0, 5" FontSize="16">Example</TextBlock>
-                <TextBlock FontSize="18"  Foreground="#858494" Margin="0, 5, 0, 5">Логин</TextBlock>
-                <TextBlock Name="tblUserName" Margin="0, 5, 0, 5" FontSize="16">Example</TextBlock>
-                <TextBlock FontSize="18"  Foreground="#858494" Margin="0, 5, 0, 5">Текущий уровень</TextBlock>
-                <TextBlock Name="tblUserLevel" Margin="0, 5, 0, 5" FontSize="16" >Example</TextBlock>
-        </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <StackPanel Orientation="Vertical" Margin="25, 0, 10, 10" Width="300" HorizontalAlignment="Left">
+                        <TextBlock FontSize="18" Foreground="#858494" Margin="0, 5, 0, 5">Уникальный номер</TextBlock>
+                        <TextBlock Name="tblUserId" Margin="0, 5, 0, 5" FontSize="16">Example</TextBlock>
+                        <TextBlock FontSize="18"  Foreground="#858494" Margin="0, 5, 0, 5">Логин</TextBlock>
+                        <TextBlock Name="tblUserName" Margin="0, 5, 0, 5" FontSize="16">Example</TextBlock>
+                        <TextBlock FontSize="18"  Foreground="#858494" Margin="0, 5, 0, 5">Текущий уровень</TextBlock>
+                        <TextBlock Name="tblUserLevel" Margin="0, 5, 0, 5" FontSize="16" >Example</TextBlock>
+                </StackPanel>
+                <StackPanel Width="350">
+                    <Grid>
+                        <Border Width="230" Height="220" Margin="80, 0, 40, 0" BorderBrush="#E8E7FF" BorderThickness="1" CornerRadius="110" ClipToBounds="True">
+                            <Border.Background>
+                                <VisualBrush Stretch="UniformToFill">
+                                    <VisualBrush.Visual>
+                                        <Image x:Name="AvatarImage" Source="Resources/Avatar/ava.jpg" Stretch="UniformToFill" />
+                                    </VisualBrush.Visual>
+                                </VisualBrush>
+                            </Border.Background>
+                            </Border>
+                    </Grid>
+
+
+                    <Button 
+                        Margin="40, 20, 0,0"
+                        Padding="0, 0, 0,5"
+                        
+                        Background="#6A5AE0"
+                        Foreground="White"
+                        BorderThickness="0"
+                        
+                        Width="155"
+                        Height="34"
+                        FontSize="16"
+                        FontWeight="Bold"
+                        Click="uploadFile">
+                        
+                        <Grid>
+                            <Image Source="Resources/UI/uploadIcon.png" Width="28" Height="18" Margin="0, 4, 100,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            <TextBlock Text="Загрузить" VerticalAlignment="Center" Margin="20,0,0,0" HorizontalAlignment="Center"/>
+                        </Grid>
+
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="10"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                </StackPanel>
+            </StackPanel>
         </StackPanel>
     </StackPanel>
 </Page>
