@@ -99,12 +99,13 @@ namespace QuezzyEn
             }
             else
             {
-                MessageBox.Show("Урок закончен");
+                MessageBox.Show("Урок закончен \n" + "Верных ответов: " + TrueCount + "\nНеверных ответов: " + FalseCount);
                 NavigationService.Navigate(new MainPage());
 
             }
         }
-
+        int TrueCount = 0;
+        int FalseCount = 0;
         private void FillQuestions()
         {
 
@@ -165,11 +166,12 @@ namespace QuezzyEn
 
                 if (selected == answer)
                 {
-                    
+                    TrueCount++;
                     MessageBox.Show("Правильно!");
                 }
                 else
                 {
+                    FalseCount++;
                     MessageBox.Show("Не правильно :(");
                 }
                 DisplayNextQuestion();
