@@ -1,0 +1,92 @@
+﻿<Page x:Class="QuezzyEn.Profile"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:QuezzyEn"
+      mc:Ignorable="d" 
+      Height="500" 
+      Width="900" 
+      Background="#E8E7FF"
+      Title="Profile">
+
+    <StackPanel Orientation="Horizontal">
+        <StackPanel Width="195" Background="#DBD7FE">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="Resources/logo/LogoWhite.png" Width="46" Height="46" HorizontalAlignment="Left" Margin="20, 20, 0,0"/>
+                <Label Content="QuezzyEn" VerticalAlignment="Center" FontWeight="Bold" Margin="5, 15, 0, 0" FontSize="16"/>
+            </StackPanel>
+
+            <StackPanel HorizontalAlignment="Center">
+                <Button 
+                        Margin="0, 30, 0,0"
+                        Padding="0, 0, 0,5"
+                        
+                        Background="#6A5AE0"
+                        Foreground="White"
+                        BorderThickness="0"
+                        
+                        Width="155"
+                        Height="34"
+                        FontSize="16"
+                        FontWeight="Bold"
+                        Click="RedirectToMainPage"
+                    >
+
+                    <Grid>
+                        <Image Source="Resources/UI/profileIcon.png" Width="28" Height="28" Margin="0, 4, 100,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        <TextBlock Text="Обучение" VerticalAlignment="Center" Margin="20,0,0,0" HorizontalAlignment="Center"/>
+                    </Grid>
+
+                    <Button.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+
+                <Button 
+                        Margin="17"
+                        Padding="0, 0, 0,5"
+                        
+                        Background="#41378B"
+                        Foreground="White"
+                        BorderThickness="0"
+                        
+                        Width="155"
+                        Height="34"
+                        FontSize="16"
+                        FontWeight="Bold">
+
+                    <Grid>
+                        <Image  Source="Resources/UI/homeIcon.png" Width="26" Height="24" Margin="0, 2, 100,0"/>
+                        <TextBlock Text="Профиль" VerticalAlignment="Center" Margin="20,0,0,0" HorizontalAlignment="Center"/>
+                    </Grid>
+
+                    <Button.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel Orientation="Vertical">
+
+            <StackPanel Width="650" HorizontalAlignment="Center" Margin="25, 7, 10, 10">
+                <Label Content="Профиль" Foreground="#6A5AE0" FontWeight="Bold" FontSize="19"/>
+                <StackPanel Height="1" Background="#ADB3BC"/>
+            </StackPanel>
+            
+        <StackPanel Orientation="Vertical" Margin="25, 0, 10, 10">
+                <TextBlock FontSize="18" Foreground="#858494" Margin="0, 5, 0, 5">Уникальный номер</TextBlock>
+                <TextBlock Name="tblUserId" Margin="0, 5, 0, 5" FontSize="16">Example</TextBlock>
+                <TextBlock FontSize="18"  Foreground="#858494" Margin="0, 5, 0, 5">Логин</TextBlock>
+                <TextBlock Name="tblUserName" Margin="0, 5, 0, 5" FontSize="16">Example</TextBlock>
+                <TextBlock FontSize="18"  Foreground="#858494" Margin="0, 5, 0, 5">Текущий уровень</TextBlock>
+                <TextBlock Name="tblUserLevel" Margin="0, 5, 0, 5" FontSize="16" >Example</TextBlock>
+        </StackPanel>
+        </StackPanel>
+    </StackPanel>
+</Page>

@@ -44,5 +44,10 @@ namespace QuezzyEn
         {
             NavigationService.Navigate(new QuizPage1());
         }
+
+        private void RedirectToProfile(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Profile());
+        }
     }
 }

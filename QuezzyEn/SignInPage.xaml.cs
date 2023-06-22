@@ -20,6 +20,10 @@ namespace QuezzyEn
     /// </summary>
     public partial class SignInPage : Page
     {
+        static public int idUser;
+        static public string UserName = "";
+        static public int userLevel; 
+
 
         quezzyEnEntities db = new quezzyEnEntities();
 
@@ -43,6 +47,9 @@ namespace QuezzyEn
                 if (Login.Text == u.login && Password.Password == u.password)
                 {
                     userValid = true;
+                    idUser = u.idUser;
+                    UserName = u.login;
+                    userLevel = u.userlevel;
                 }
               
             }

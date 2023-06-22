@@ -65,7 +65,9 @@
                         Width="155"
                         Height="34"
                         FontSize="16"
-                        FontWeight="Bold">
+                        FontWeight="Bold"
+                        Click="RedirectToProfile"
+                    >
 
                     <Grid>
                         <Image  Source="Resources/UI/homeIcon.png" Width="26" Height="24" Margin="0, 2, 100,0"/>
